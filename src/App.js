@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import Footer from './Footer';
+import Navbar from './components/Navbar';
+
+import 'font-awesome/css/font-awesome.min.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div style={{height:'400px', display:'flex',justifyContent:'center',alignItems:'center'}} > 
+      <h1>main section </h1>
+      </div>
+      <Footer/>
     </div>
   );
 }
